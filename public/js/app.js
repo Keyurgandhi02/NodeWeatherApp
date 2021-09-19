@@ -9,19 +9,17 @@ weatherSearchHandler.addEventListener("submit", (e) => {
 
   locationData.textContent = "Loading...";
 
-  fetch("http://localhost:3000/weather?address=" + searchData.value).then(
-    (res) => {
-      res.json().then((data) => {
-        if (data.error) {
-          errorMessage.textContent = "Sometihng went wrong";
-        } else {
-          locationData.textContent = data.address;
-          tempData.textContent = data.latitude;
-          tempData1.textContent = data.longitude;
-        }
-      });
-    }
-  );
+  fetch("/weather?address=" + searchData.value).then((res) => {
+    res.json().then((data) => {
+      if (data.error) {
+        errorMessage.textContent = "Sometihng went wrong";
+      } else {
+        locationData.textContent = data.address;
+        tempData.textContent = data.latitude;
+        tempData1.textContent = data.longitude;
+      }
+    });
+  });
 
   searchData.textContent = "";
 });
