@@ -1,0 +1,58 @@
+body {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+  background-color: rgb(255, 255, 255);
+  width: 100vh;
+  height: 70vh;
+  display: block;
+  margin: auto;
+}
+p {
+  display: inline-block;
+  top: 70%;
+  position: absolute;
+}
+h1 {
+  padding: 10px;
+  font-size: 72px;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+  margin: 20px;
+  padding: 20px;
+}
+a:link {
+  color: #333333;
+}
+a:visited {
+  color: #333333;
+}
+a:active {
+  color: #333333;
+}
+
+form {
+  margin: 10px;
+  padding: 10px;
+}
+form > input {
+  margin-top: 20px;
+  width: 250px;
+  height: 35px;
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+form > button {
+  background-color: cornflowerblue;
+  color: white;
+  height: 35px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
